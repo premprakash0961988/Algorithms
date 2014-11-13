@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "Sorter.h"
 
 @interface SortingAlgorithmTests : XCTestCase
 
@@ -36,5 +37,23 @@
         // Put the code you want to measure the time of here.
     }];
 }
+
+- (void)testInsertionSort {
+    NSArray *input = @[@0,@9,@12,@67,@56,@42,@42];
+    //Sorter *_sorter = [Sorter new];
+    NSArray *outputArray = [Sorter sortUsingInsertionSortWithInput:input];
+    NSArray *expectedOutput = @[@0,@9,@12,@42,@42,@56,@67];
+    XCTAssertEqualObjects(outputArray, expectedOutput, @"Budum");
+}
+
+- (void)testNULLInInsertionSort {
+    NSArray *input = @[@0,[NSNull null],@12,@67,@56,@42,@42];
+    //Sorter *_sorter = [Sorter new];
+    NSArray *outputArray = [Sorter sortUsingInsertionSortWithInput:input];
+    NSArray *expectedOutput = nil;
+    XCTAssertEqualObjects(outputArray, expectedOutput, @"Budum");
+}
+
+
 
 @end

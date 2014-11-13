@@ -13,4 +13,5 @@
 +(NSArray*)sortUsingInsertionSortWithInput:(NSArray*)inputArray;
 +(NSArray*)sortUsingSelectionSortWithInput:(NSArray*)inputArray;
 +(NSArray*)sortUsingMergeSortWithInput:(NSArray*)inputArray;
++(NSArray*)sortUsingBubbleSortWithInput:(NSArray*)inputArray;
 @end

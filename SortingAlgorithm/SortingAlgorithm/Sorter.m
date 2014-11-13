@@ -10,6 +10,8 @@
 
 @implementation Sorter
 
+#pragma Insertion Sort
+
 +(NSArray*)sortUsingInsertionSortWithInput:(NSArray*)inputArray_ {
     // O(n2 Complexity)
     NSInteger x = 0;
@@ -26,6 +28,8 @@
     }
     return [inputArray copy];
 }
+
+#pragma Selection Sort
 
 +(NSArray*)sortUsingSelectionSortWithInput:(NSArray*)inputArray_
 {
@@ -52,6 +56,8 @@
 
 
 
+
+#pragma Merge Sort
 +(NSArray*)sortUsingMergeSortWithInput:(NSArray*)inputArray {
     
     if(inputArray.count < 2) {
@@ -100,5 +106,21 @@
     return [finalArray copy];
 }
 
+
+#pragma Bubble Sort
+
++(NSArray*)sortUsingBubbleSortWithInput:(NSArray*)inputArray {
+    
+    NSMutableArray *sortedArray = [inputArray mutableCopy];
+    for (int i = 0; i < sortedArray.count; i++) {
+        for (int j = 0; j < sortedArray.count - i; j++) {
+            if(sortedArray[MIN(sortedArray.count - 1, j+1)] < sortedArray[j] ) {
+                [sortedArray exchangeObjectAtIndex:j+1 withObjectAtIndex:j];
+            }
+        }
+    }
+    
+    return sortedArray;
+}
 
 @end

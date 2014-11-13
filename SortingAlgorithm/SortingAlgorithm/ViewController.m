@@ -21,7 +21,8 @@
     NSArray *inputArray = @[@20,@10,@30,@80,@35,@55,@34,@1,@90,@1,@2];
 //    NSArray *outputArray = [Sorter sortUsingInsertionSortWithInput:inputArray];
 //    NSArray *outputArray = [Sorter sortUsingSelectionSortWithInput:inputArray];
-    NSArray *outputArray = [Sorter sortUsingMergeSortWithInput:inputArray];
+//    NSArray *outputArray = [Sorter sortUsingMergeSortWithInput:inputArray];
+    NSArray *outputArray = [Sorter sortUsingBubbleSortWithInput:inputArray];
     NSLog(@"%@",outputArray);
 }
 
