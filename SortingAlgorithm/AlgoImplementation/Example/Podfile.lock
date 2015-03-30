@@ -1,0 +1,17 @@
+PODS:
+  - AlgoImplementation (0.1.0)
+  - FBSnapshotTestCase (1.6)
+
+DEPENDENCIES:
+  - AlgoImplementation (from `../`)
+  - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  AlgoImplementation:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AlgoImplementation: a84d8618bff9e5ed00346788e59a174d6194d874
+  FBSnapshotTestCase: 9d5fe43b29ae3a0ed8fc829477971b281038f748
+
+COCOAPODS: 0.35.0

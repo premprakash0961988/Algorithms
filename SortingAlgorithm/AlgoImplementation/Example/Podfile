@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'AlgoImplementation', :exclusive => true do
+  pod "AlgoImplementation", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "AlgoImplementation", :path => "../"
+
+  pod 'FBSnapshotTestCase'
+end
